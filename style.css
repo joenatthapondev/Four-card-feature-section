@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+main {
+    padding: 5rem 1rem;
+}
+
+main>article:first-child {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main>article:first-child h1 {
+    margin-bottom: 1rem;
+}
+
+main .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+
+main .cards article {
+    background-color: #fff;
+    border: 0px solid;
+    padding: 1.5rem;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+main .cards article:first-child {
+    border-top: 0.5rem solid hsl(180, 62%, 55%);
+}
+
+main .cards article:nth-child(2) {
+    border-top: 0.5rem solid hsl(0, 78%, 62%);
+}
+
+main .cards article:nth-child(3) {
+    border-top: 0.5rem solid hsl(34, 97%, 64%);
+}
+
+main .cards article:last-child {
+    border-top: 0.5rem solid hsl(212, 86%, 64%);
+}
+
+main .cards article h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+main .cards article p {
+    margin-bottom: 3rem;
+}
+
+main .cards article img {
+    display: block;
+    margin-left: auto;
+}
+
+h1, h2 {
+    color: hsl(234, 12%, 34%);
+}
+
+h1 span {
+    font-weight: 200;
+}
+
+p {
+    line-height: 1.8;
+    color: hsl(229, 6%, 66%);
+}
+
+@media (min-width: 768px){
+    main > article{
+        max-width: 500px;
+        margin: auto;
+    }
+
+    main > article:first-child h1{
+        font-size: 2rem;
+    }
+    
+    main .cards{
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .cards article{
+        /* flex: 1; */
+        width: 400px;
+        padding: 2rem 2.5rem 2rem 2.5rem;
+    }
+
+    main .cards article:nth-child(odd){
+        transform: translateY(50%);
+    }
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
